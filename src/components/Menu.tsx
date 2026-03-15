@@ -36,10 +36,17 @@ export function Menu() {
           {/* İnce altın çizgi */}
           <div className="h-0.5 bg-gradient-to-r from-transparent via-bosporus-gold to-transparent" />
 
-          {/* İçerik: Lahmacun üstte, Pide altta */}
+          {/* İçerik: Lahmacun üstte, Pide altta – her bölüm kendi görseli ile arka plan */}
           <div className="px-6 py-6 sm:px-8 sm:py-8">
-            {/* Lahmacun bölümü */}
-            <div>
+            {/* Lahmacun bölümü – pide ile aynı genişlikte (cover) */}
+            <div className="relative rounded-xl overflow-hidden">
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-60"
+                style={{ backgroundImage: 'url(/lahmacun.jpg)' }}
+                aria-hidden
+              />
+              <div className="absolute inset-0 bg-white/45" aria-hidden />
+              <div className="relative px-4 py-4 sm:px-5 sm:py-5">
               <h3 className="font-display text-lg font-semibold text-bosporus-red">
                 {menu.lahmacun[lang]}
               </h3>
@@ -61,13 +68,21 @@ export function Menu() {
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
 
             {/* Ayırıcı çizgi */}
             <div className="my-6 border-t border-bosporus-red/20" />
 
-            {/* Pide bölümü */}
-            <div>
+            {/* Pide bölümü – pide.jpg arka plan */}
+            <div className="relative rounded-xl overflow-hidden">
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-60"
+                style={{ backgroundImage: 'url(/pide.jpg)' }}
+                aria-hidden
+              />
+              <div className="absolute inset-0 bg-white/45" aria-hidden />
+              <div className="relative px-4 py-4 sm:px-5 sm:py-5">
               <h3 className="font-display text-lg font-semibold text-bosporus-red">
                 {menu.pide[lang]}
               </h3>
@@ -86,6 +101,7 @@ export function Menu() {
                   </li>
                 ))}
               </ul>
+              </div>
             </div>
           </div>
 
