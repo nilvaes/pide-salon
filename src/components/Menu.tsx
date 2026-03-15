@@ -7,60 +7,91 @@ export function Menu() {
 
   return (
     <section id="menu" className="scroll-mt-20 bg-bosporus-cream py-16 sm:py-20">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 className="font-display text-3xl font-bold text-bosporus-red-dark sm:text-4xl">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
+        <h2 className="font-display text-3xl font-bold text-bosporus-red-dark sm:text-4xl text-center mb-12">
           {menu.heading[lang]}
         </h2>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-2">
-          <div className="rounded-xl border border-bosporus-red/20 bg-white p-6 shadow-md">
-            <h3 className="font-display text-xl font-semibold text-bosporus-red">
-              {menu.pide[lang]}
-            </h3>
-            <p className="mt-2 text-bosporus-brown/80 text-sm">
-              {menu.pideIntro[lang]}
+        {/* Tek parça kart – tema ile uyumlu kart motifi */}
+        <article
+          className="relative overflow-hidden rounded-2xl bg-white shadow-xl ring-2 ring-bosporus-red/30"
+          aria-labelledby="menu-card-title"
+        >
+          {/* Üst şerit: kart başlığı (karttaki gibi kırmızı / altın) */}
+          <div className="bg-gradient-to-r from-bosporus-red-dark to-bosporus-red px-6 py-4 sm:px-8 sm:py-5">
+            <div
+              className="absolute inset-0 opacity-[0.08]"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h40v40H0z' fill='none'/%3E%3Cpath d='M20 8v4m0 8v4m-8-8h4m-8 0h4' stroke='%23C9A227' stroke-width='.5' fill='none'/%3E%3C/svg%3E")`,
+              }}
+            />
+            <p id="menu-card-title" className="relative font-script text-xl sm:text-2xl text-bosporus-cream/95">
+              Lahmacun & Pide Salonu
             </p>
-            <ul className="mt-6 space-y-3" role="list">
-              {menu.items.pide.map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-baseline justify-between border-b border-bosporus-red/10 pb-3 last:border-0 last:pb-0"
-                >
-                  <span className="text-bosporus-brown font-medium">
-                    {item.name[lang]}
-                  </span>
-                  <span className="text-bosporus-red/80 tabular-nums">
-                    {item.price}
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <p className="relative font-display text-sm font-semibold tracking-wide text-bosporus-gold mt-0.5">
+              BOSPORUS
+            </p>
           </div>
 
-          <div className="rounded-xl border border-bosporus-red/20 bg-white p-6 shadow-md">
-            <h3 className="font-display text-xl font-semibold text-bosporus-red">
-              {menu.lahmacun[lang]}
-            </h3>
-            <p className="mt-2 text-bosporus-brown/80 text-sm">
-              {menu.lahmacunIntro[lang]}
-            </p>
-            <ul className="mt-6 space-y-3" role="list">
-              {menu.items.lahmacun.map((item, i) => (
-                <li
-                  key={i}
-                  className="flex items-baseline justify-between border-b border-bosporus-red/10 pb-3 last:border-0 last:pb-0"
-                >
-                  <span className="text-bosporus-brown font-medium">
-                    {item.name[lang]}
-                  </span>
-                  <span className="text-bosporus-red/80 tabular-nums">
-                    {item.price}
-                  </span>
-                </li>
-              ))}
-            </ul>
+          {/* İnce altın çizgi */}
+          <div className="h-0.5 bg-gradient-to-r from-transparent via-bosporus-gold to-transparent" />
+
+          {/* İçerik: Lahmacun üstte, Pide altta */}
+          <div className="px-6 py-6 sm:px-8 sm:py-8">
+            {/* Lahmacun bölümü */}
+            <div>
+              <h3 className="font-display text-lg font-semibold text-bosporus-red">
+                {menu.lahmacun[lang]}
+              </h3>
+              {lang === 'de' && (
+                <p className="text-sm text-gray-500 mt-0.5">(Lahmacun)</p>
+              )}
+              <ul className="mt-4 space-y-2.5" role="list">
+                {menu.items.lahmacun.map((item, i) => (
+                  <li
+                    key={`lahmacun-${i}`}
+                    className="flex items-baseline justify-between gap-4 border-b border-bosporus-red/10 pb-2.5 last:border-0 last:pb-0"
+                  >
+                    <span className="text-bosporus-brown font-medium">
+                      {item.name[lang]}
+                    </span>
+                    <span className="text-bosporus-red/90 tabular-nums shrink-0">
+                      {item.price}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Ayırıcı çizgi */}
+            <div className="my-6 border-t border-bosporus-red/20" />
+
+            {/* Pide bölümü */}
+            <div>
+              <h3 className="font-display text-lg font-semibold text-bosporus-red">
+                {menu.pide[lang]}
+              </h3>
+              <ul className="mt-4 space-y-2.5" role="list">
+                {menu.items.pide.map((item, i) => (
+                  <li
+                    key={`pide-${i}`}
+                    className="flex items-baseline justify-between gap-4 border-b border-bosporus-red/10 pb-2.5 last:border-0 last:pb-0"
+                  >
+                    <span className="text-bosporus-brown font-medium">
+                      {item.name[lang]}
+                    </span>
+                    <span className="text-bosporus-red/90 tabular-nums shrink-0">
+                      {item.price}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+
+          {/* Kart alt çerçevesi (ince kırmızı) */}
+          <div className="h-1 bg-bosporus-red/40 rounded-b-2xl" />
+        </article>
       </div>
     </section>
   );

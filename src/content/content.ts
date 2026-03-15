@@ -16,16 +16,8 @@ export const content = {
   },
   menu: {
     heading: { de: 'Unsere Speisekarte', tr: 'Menümüz' },
-    pide: { de: 'Pide', tr: 'Pide' },
-    pideIntro: {
-      de: 'Gebacken im Steinofen – wählen Sie aus unseren Pide-Sorten.',
-      tr: 'Taş fırında pişirilir – pide çeşitlerimizden seçin.',
-    },
-    lahmacun: { de: 'Lahmacun', tr: 'Lahmacun' },
-    lahmacunIntro: {
-      de: 'Dünner Teig mit gewürztem Hackfleisch – mit Zitrone und Petersilie serviert.',
-      tr: 'Baharatlı kıymalı ince hamur – limon ve maydanozla servis edilir.',
-    },
+    pide: { de: 'Pide Sorten', tr: 'Pide Çeşitleri' },
+    lahmacun: { de: 'Türkische Pizza', tr: 'Lahmacun' },
     items: {
       pide: [
         { name: { de: 'Pide mit Käse', tr: 'Peynirli Pide' }, price: '—' },
