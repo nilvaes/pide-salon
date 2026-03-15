@@ -13,7 +13,7 @@ export function Hero() {
       {/* Istanbul evening – full-bleed background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url(/istanbul-evening.jpg)' }}
+        style={{ backgroundImage: `url(${import.meta.env.BASE_URL}istanbul-evening.jpg)` }}
         aria-hidden
       />
       {/* Dark overlay: kırmızı-maroon ton, tema ile uyumlu + metin okunaklılığı */}

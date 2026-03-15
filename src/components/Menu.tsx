@@ -42,7 +42,7 @@ export function Menu() {
             <div className="relative rounded-xl overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-60"
-                style={{ backgroundImage: 'url(/lahmacun.jpg)' }}
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}lahmacun.jpg)` }}
                 aria-hidden
               />
               <div className="absolute inset-0 bg-white/45" aria-hidden />
@@ -78,7 +78,7 @@ export function Menu() {
             <div className="relative rounded-xl overflow-hidden">
               <div
                 className="absolute inset-0 bg-cover bg-center opacity-60"
-                style={{ backgroundImage: 'url(/pide.jpg)' }}
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}pide.jpg)` }}
                 aria-hidden
               />
               <div className="absolute inset-0 bg-white/45" aria-hidden />
