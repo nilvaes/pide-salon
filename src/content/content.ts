@@ -10,8 +10,8 @@ export const content = {
     title: { de: 'BOSPORUS', tr: 'BOSPORUS' },
     tagline: { de: 'Lahmacun & Pide Salonu', tr: 'Lahmacun & Pide Salonu' },
     intro: {
-      de: 'Authentische türkische Küche in Köln – frisch gebackene Pide und Lahmacun nach traditionellen Rezepten.',
-      tr: 'Köln\'de otantik Türk mutfağı – geleneksel tariflerle taze pide ve lahmacun.',
+      de: 'Authentische türkische Küche in Köln. Frisch gebackene Pide und Lahmacun nach traditionellen Rezepten.',
+      tr: 'Köln\'de otantik Türk mutfağı. Geleneksel tariflerle taze pide ve lahmacun.',
     },
   },
   menu: {
