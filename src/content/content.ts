@@ -44,7 +44,7 @@ export const content = {
     heading: { de: 'Catering & Sonderanlässe', tr: 'Catering ve Özel Günler' },
     text: {
       de: 'Bestellungen für Verlobung, Hochzeit und besondere Anlässe möglich. Wir liefern gerne für Ihre Feier.',
-      tr: 'Nişan, düğün ve özel günleriniz için sipariş alınır. Törenleriniz için teslimat yapıyoruz.',
+      tr: 'Nişan, düğün ve özel günleriniz için sipariş alınır. Kutlamalarınız için teslimat yapıyoruz.',
     },
     cta: { de: 'Kontaktieren Sie uns', tr: 'Bize Ulaşın' },
   },
