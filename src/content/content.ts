@@ -27,8 +27,8 @@ export const content = {
         { name: { de: 'Gemischte Pide', tr: 'Karışık Pide' }, price: '—' },
       ],
       lahmacun: [
-        { name: { de: 'Lahmacun (1 Stück)', tr: 'Lahmacun (1 adet)' }, price: '—' },
-        { name: { de: 'Lahmacun (2 Stück)', tr: 'Lahmacun (2 adet)' }, price: '—' },
+        { name: { de: 'Lahmacun ohne Salat', tr: 'Lahmacun (sade)' }, price: '—' },
+        { name: { de: 'Lahmacun mit Salat', tr: 'Lahmacun (salatali)' }, price: '—' },
       ],
     },
   },
