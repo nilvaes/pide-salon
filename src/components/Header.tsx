@@ -10,7 +10,7 @@ export function Header() {
   const nav = content.nav;
 
   return (
-    <header className="sticky top-0 z-50 border-b border-bosporus-red/20 bg-bosporus-red-dark shadow-lg">
+    <header className="relative sticky top-0 z-50 border-b border-bosporus-red/20 bg-bosporus-red-dark shadow-lg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <a href="#" className="focus:outline-none focus:ring-2 focus:ring-bosporus-gold rounded-md" aria-label="BOSPORUS Start">
           <Logo />
@@ -75,35 +75,43 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-bosporus-red/30 bg-bosporus-red-dark px-4 py-4 md:hidden">
-          <div className="flex flex-col gap-3">
-            <a href="#menu" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
-              {nav.menu[lang]}
-            </a>
-            <a href="#catering" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
-              {nav.catering[lang]}
-            </a>
-            <a href="#contact" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
-              {nav.contact[lang]}
-            </a>
-            <div className="flex gap-2 pt-2">
-              <button
-                type="button"
-                onClick={() => { setLang('de'); setMenuOpen(false); }}
-                className={`rounded px-3 py-1.5 text-sm font-medium ${lang === 'de' ? 'bg-bosporus-gold text-bosporus-red-dark' : 'bg-bosporus-red/50 text-bosporus-cream'}`}
-              >
-                DE
-              </button>
-              <button
-                type="button"
-                onClick={() => { setLang('tr'); setMenuOpen(false); }}
-                className={`rounded px-3 py-1.5 text-sm font-medium ${lang === 'tr' ? 'bg-bosporus-gold text-bosporus-red-dark' : 'bg-bosporus-red/50 text-bosporus-cream'}`}
-              >
-                TR
-              </button>
+        <>
+          <button
+            type="button"
+            className="fixed inset-0 z-40 md:hidden"
+            aria-label="Menü kapat"
+            onClick={() => setMenuOpen(false)}
+          />
+          <div className="absolute left-0 right-0 top-full z-50 w-full border-b border-bosporus-red/30 bg-bosporus-red-dark px-4 py-4 shadow-lg md:hidden">
+            <div className="mx-auto flex max-w-6xl flex-col gap-3">
+              <a href="#menu" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
+                {nav.menu[lang]}
+              </a>
+              <a href="#catering" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
+                {nav.catering[lang]}
+              </a>
+              <a href="#contact" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
+                {nav.contact[lang]}
+              </a>
+              <div className="flex gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => { setLang('de'); setMenuOpen(false); }}
+                  className={`rounded px-3 py-1.5 text-sm font-medium ${lang === 'de' ? 'bg-bosporus-gold text-bosporus-red-dark' : 'bg-bosporus-red/50 text-bosporus-cream'}`}
+                >
+                  DE
+                </button>
+                <button
+                  type="button"
+                  onClick={() => { setLang('tr'); setMenuOpen(false); }}
+                  className={`rounded px-3 py-1.5 text-sm font-medium ${lang === 'tr' ? 'bg-bosporus-gold text-bosporus-red-dark' : 'bg-bosporus-red/50 text-bosporus-cream'}`}
+                >
+                  TR
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </>
       )}
     </header>
   );
