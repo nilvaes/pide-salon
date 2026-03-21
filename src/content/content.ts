@@ -20,15 +20,15 @@ export const content = {
     lahmacun: { de: 'Türkische Pizza', tr: 'Lahmacun' },
     items: {
       pide: [
-        { name: { de: 'Pide mit Käse', tr: 'Peynirli Pide' }, price: '—' },
-        { name: { de: 'Pide mit Fleisch', tr: 'Kıymalı Pide' }, price: '—' },
-        { name: { de: 'Pide mit Ei', tr: 'Yumurtalı Pide' }, price: '—' },
-        { name: { de: 'Pide mit Spinat', tr: 'Ispanaklı Pide' }, price: '—' },
-        { name: { de: 'Gemischte Pide', tr: 'Karışık Pide' }, price: '—' },
+        { name: { de: 'Pide mit Käse', tr: 'Kaşarlı Pide' }, price: '6,00 €' },
+        { name: { de: 'Pide mit Fleisch', tr: 'Kıymalı Pide' }, price: '7,00 €' },
+        { name: { de: 'Pide mit Ei', tr: 'Yumurtalı Pide' }, price: '8,00 €' },
+        { name: { de: 'Pide mit Spinat', tr: 'Ispanaklı Pide' }, price: '9,00 €' },
+        { name: { de: 'Gemischte Pide', tr: 'Karışık Pide' }, price: '10,00 €' },
       ],
       lahmacun: [
-        { name: { de: 'Lahmacun ohne Salat', tr: 'Lahmacun (sade)' }, price: '—' },
-        { name: { de: 'Lahmacun mit Salat', tr: 'Lahmacun (salatali)' }, price: '—' },
+        { name: { de: 'Lahmacun ohne Salat', tr: 'Lahmacun (sade)' }, price: '3,00 €' },
+        { name: { de: 'Lahmacun mit Salat', tr: 'Lahmacun (salatalı)' }, price: '3,50 €' },
       ],
     },
   },
