@@ -105,7 +105,6 @@ export const content = {
     mobilLabel: { de: 'Mobil', tr: 'Mobil' },
   },
   footer: {
-    name: { de: 'BOSPORUS Lahmacun & Pide Salonu', tr: 'BOSPORUS Lahmacun & Pide Salonu' },
     legal: { de: '© BOSPORUS. Alle Rechte vorbehalten.', tr: '© BOSPORUS. Tüm hakları saklıdır.' },
   },
 } as const;
