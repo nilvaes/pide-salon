@@ -14,7 +14,7 @@ export function OpeningHours() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <h2
           id="opening-hours-heading"
-          className="font-display text-center text-3xl font-bold text-bosporus-red-dark sm:text-left sm:text-4xl"
+          className="font-display text-left text-3xl font-bold text-bosporus-red-dark sm:text-4xl"
         >
           {openingHours.heading[lang]}
         </h2>
