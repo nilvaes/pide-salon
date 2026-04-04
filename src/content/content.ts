@@ -105,6 +105,6 @@ export const content = {
     mobilLabel: { de: 'Mobil', tr: 'Mobil' },
   },
   footer: {
-    legal: { de: '© BOSPORUS. Alle Rechte vorbehalten.', tr: '© BOSPORUS. Tüm hakları saklıdır.' },
+    legal: { de: '© BOSPORUS PIDE. Alle Rechte vorbehalten.', tr: '© BOSPORUS PIDE. Tüm hakları saklıdır.' },
   },
 } as const;
