@@ -8,7 +8,7 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-20 bg-bosporus-cream py-16 sm:py-20"
+      className="scroll-mt-20 bg-bosporus-cream pt-8 pb-16 sm:py-20"
       aria-labelledby="contact-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">

@@ -8,7 +8,7 @@ export function OpeningHours() {
   return (
     <section
       id="opening-hours"
-      className="scroll-mt-20 border-y border-bosporus-red/15 bg-gradient-to-b from-bosporus-cream via-[#efe6dc] to-bosporus-cream py-16 sm:py-20"
+      className="scroll-mt-20 border-y border-bosporus-red/15 bg-gradient-to-b from-bosporus-cream via-[#efe6dc] to-bosporus-cream pt-16 pb-8 sm:py-20"
       aria-labelledby="opening-hours-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -23,7 +23,7 @@ export function OpeningHours() {
           {openingHours.rows.map((row, i) => (
             <div
               key={i}
-              className="flex flex-col gap-2 border-b border-bosporus-red/20 py-8 first:pt-0 last:border-0 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:py-10"
+              className="flex flex-col gap-2 border-b border-bosporus-red/20 py-8 first:pt-0 last:border-0 last:pb-0 sm:flex-row sm:items-end sm:justify-between sm:gap-8 sm:py-10 sm:last:pb-10"
             >
               <dt className="text-lg font-medium leading-snug text-bosporus-brown sm:text-xl md:text-2xl">
                 {row.label[lang]}
