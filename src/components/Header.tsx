@@ -7,13 +7,22 @@ export function Header() {
   const { lang, setLang } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const nav = content.nav;
+  const { nav, hero } = content;
 
   return (
     <header className="relative sticky top-0 z-50 border-b border-bosporus-red/20 bg-bosporus-red-dark shadow-lg">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
-        <a href="#" className="focus:outline-none focus:ring-2 focus:ring-bosporus-gold rounded-md" aria-label="BOSPORUS Start">
-          <Logo />
+        <a
+          href="#"
+          className="group focus:outline-none focus:ring-2 focus:ring-bosporus-gold rounded-md"
+          aria-label="BOSPORUS Start"
+        >
+          <div className="flex flex-col items-center gap-1.5 sm:items-start sm:gap-1">
+            <Logo />
+            <p className="max-w-[min(100%,20rem)] text-center font-script text-base leading-tight text-bosporus-gold/95 sm:text-left sm:text-lg md:text-xl">
+              {hero.tagline[lang]}
+            </p>
+          </div>
         </a>
 
         <nav className="hidden md:flex md:items-center md:gap-8">
