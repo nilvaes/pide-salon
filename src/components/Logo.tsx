@@ -1,21 +1,22 @@
-export function Logo() {
+type LogoProps = {
+  /** Footer için biraz daha küçük */
+  size?: 'default' | 'sm';
+};
+
+export function Logo({ size = 'default' }: LogoProps) {
+  const sizeClass =
+    size === 'sm'
+      ? 'h-9 w-auto max-w-[180px] sm:h-10 sm:max-w-[220px] md:h-11 md:max-w-[240px]'
+      : 'h-12 w-auto max-w-[240px] sm:h-14 sm:max-w-[300px] md:h-[4.25rem] md:max-w-[360px] lg:h-20 lg:max-w-[400px]'
+
   return (
     <div className="flex flex-col items-center sm:items-start">
-      <svg
-        className="h-8 w-24 text-bosporus-gold sm:h-10 sm:w-28"
-        viewBox="0 0 120 40"
-        fill="currentColor"
-        aria-hidden
-      >
-        {/* Bosphorus bridge + minarets silhouette */}
-        <path d="M8 28 L20 20 L40 22 L60 20 L80 22 L100 20 L112 28 L112 32 L8 32 Z" opacity="0.9" />
-        <rect x="18" y="12" width="4" height="20" rx="1" />
-        <rect x="98" y="12" width="4" height="20" rx="1" />
-      </svg>
-      <span className="font-display text-2xl font-bold tracking-tight text-bosporus-gold sm:text-3xl">
-        BOSPORUS
-      </span>
-      <span className="font-script text-base text-white/95 sm:text-lg">Lahmacun & Pide Salonu</span>
+      <img
+        src={`${import.meta.env.BASE_URL}logo-bosporus.png`}
+        alt="BOSPORUS Lahmacun & Pide Salonu"
+        className={`${sizeClass} object-contain object-left`}
+        decoding="async"
+      />
     </div>
   );
 }

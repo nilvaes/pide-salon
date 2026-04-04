@@ -18,7 +18,7 @@ export function Hero() {
       />
       {/* Dark overlay: kırmızı-maroon ton, tema ile uyumlu + metin okunaklılığı */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-bosporus-red-dark/90 via-bosporus-red-dark/75 to-bosporus-red-dark/50"
+        className="absolute inset-0 bg-gradient-to-r from-bosporus-red-dark/80 via-bosporus-red-dark/65 to-bosporus-red-dark/42"
         aria-hidden
       />
       {/* Hafif altın desen */}
