@@ -87,13 +87,12 @@ export function Menu() {
                   ))}
                 </ul>
               </div>
-              <div className="relative h-48 w-full shrink-0 md:h-auto md:w-[38%] md:max-w-md">
+              <div className="h-48 w-full shrink-0 md:h-auto md:w-[38%] md:max-w-md">
                 <img
                   src={`${base}lahmacun.jpg`}
                   alt=""
                   className="h-full w-full object-cover brightness-[1.06] saturate-[0.72]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-white via-white/20 to-transparent md:from-white/90 md:via-transparent" />
               </div>
             </div>
           </div>
@@ -116,13 +115,12 @@ export function Menu() {
                   ))}
                 </ul>
               </div>
-              <div className="relative h-48 w-full shrink-0 md:h-auto md:w-[38%] md:max-w-md">
+              <div className="h-48 w-full shrink-0 md:h-auto md:w-[38%] md:max-w-md">
                 <img
                   src={`${base}pide.jpg`}
                   alt=""
                   className="h-full w-full object-cover brightness-[1.06] saturate-[0.72]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-l from-white via-white/20 to-transparent md:from-white/90 md:via-transparent" />
               </div>
             </div>
           </div>
