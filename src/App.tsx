@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Menu } from './components/Menu';
 import { Catering } from './components/Catering';
+import { OpeningHours } from './components/OpeningHours';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
@@ -15,6 +16,7 @@ function App() {
           <Hero />
           <Menu />
           <Catering />
+          <OpeningHours />
           <Contact />
         </main>
         <Footer />

@@ -11,6 +11,7 @@ export const content = {
   nav: {
     menu: { de: 'Speisekarte', tr: 'Menü' },
     catering: { de: 'Catering', tr: 'Catering' },
+    openingHours: { de: 'Öffnungszeiten', tr: 'Çalışma saatleri' },
     contact: { de: 'Kontakt', tr: 'İletişim' },
   },
   hero: {
@@ -72,6 +73,19 @@ export const content = {
         { name: { de: 'Türkischer Tee', tr: 'Türk çayı' }, price: '1,00 €' },
       ] satisfies MenuItem[],
     },
+  },
+  openingHours: {
+    heading: { de: 'Öffnungszeiten', tr: 'Çalışma saatleri' },
+    rows: [
+      {
+        label: { de: 'Montag bis Freitag', tr: 'Pazartesi–Cuma' },
+        time: '08:00–20:00',
+      },
+      {
+        label: { de: 'Samstag & Sonntag', tr: 'Cumartesi & Pazar' },
+        time: '08:00–21:00',
+      },
+    ],
   },
   catering: {
     heading: { de: 'Catering & Sonderanlässe', tr: 'Catering ve Özel Günler' },

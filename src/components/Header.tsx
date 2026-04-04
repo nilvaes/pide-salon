@@ -30,6 +30,12 @@ export function Header() {
             {nav.catering[lang]}
           </a>
           <a
+            href="#opening-hours"
+            className="text-bosporus-cream/90 hover:text-bosporus-gold transition-colors font-medium"
+          >
+            {nav.openingHours[lang]}
+          </a>
+          <a
             href="#contact"
             className="text-bosporus-cream/90 hover:text-bosporus-gold transition-colors font-medium"
           >
@@ -89,6 +95,9 @@ export function Header() {
               </a>
               <a href="#catering" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
                 {nav.catering[lang]}
+              </a>
+              <a href="#opening-hours" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
+                {nav.openingHours[lang]}
               </a>
               <a href="#contact" className="text-bosporus-cream/90 hover:text-bosporus-gold font-medium" onClick={() => setMenuOpen(false)}>
                 {nav.contact[lang]}
