@@ -78,12 +78,8 @@ export const content = {
     heading: { de: 'Öffnungszeiten', tr: 'Çalışma saatleri' },
     rows: [
       {
-        label: { de: 'Montag bis Freitag', tr: 'Pazartesi–Cuma' },
-        time: '08:00–20:00',
-      },
-      {
-        label: { de: 'Samstag & Sonntag', tr: 'Cumartesi & Pazar' },
-        time: '08:00–21:00',
+        label: { de: 'Täglich', tr: 'Her gün' },
+        time: '11:00–21:00',
       },
     ],
   },
