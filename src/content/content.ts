@@ -14,6 +14,25 @@ export const content = {
     openingHours: { de: 'Öffnungszeiten', tr: 'Çalışma saatleri' },
     contact: { de: 'Kontakt', tr: 'İletişim' },
   },
+  marquee: {
+    /** Kurze Slogans für die Laufschrift (pro Sprache) */
+    phrases: {
+      de: [
+        'Schnell, praktisch und lecker',
+        'Perfekt für unterwegs',
+        'Leckeres zum Mitnehmen',
+        'Frisch zubereitet in Köln',
+        'Tradition trifft Geschmack',
+      ],
+      tr: [
+        'Hızlı, pratik ve lezzetli',
+        'Yol üstü lezzet durağı',
+        'Hızlı atıştırmalık',
+        'Taze, sicacik lahmacun',
+        'Gelenek ve lezzet bir arada',
+      ],
+    },
+  },
   hero: {
     title: { de: 'BOSPORUS', tr: 'BOSPORUS' },
     tagline: { de: 'Lahmacun & Pide Salonu', tr: 'Lahmacun & Pide Salonu' },

@@ -60,7 +60,10 @@ export function Menu() {
   const { menu } = content;
 
   return (
-    <section id="menu" className="scroll-mt-20 bg-bosporus-cream py-16 sm:py-24">
+    <section
+      id="menu"
+      className="scroll-mt-20 bg-bosporus-cream pb-16 pt-9 sm:pb-24 sm:pt-11"
+    >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="text-center sm:text-left">
           <p className="mb-4 inline-block rounded-full border border-bosporus-gold/50 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-bosporus-red-dark">

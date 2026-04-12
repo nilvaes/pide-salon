@@ -1,5 +1,6 @@
 import { LanguageProvider } from './context/LanguageContext';
 import { Header } from './components/Header';
+import { MarqueeBanner } from './components/MarqueeBanner';
 import { Hero } from './components/Hero';
 import { Menu } from './components/Menu';
 import { Catering } from './components/Catering';
@@ -14,6 +15,7 @@ function App() {
         <Header />
         <main className="flex-1">
           <Hero />
+          <MarqueeBanner />
           <Menu />
           <Catering />
           <OpeningHours />
