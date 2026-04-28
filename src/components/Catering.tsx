@@ -8,7 +8,7 @@ export function Catering() {
   return (
     <section
       id="catering"
-      className="scroll-mt-20 bg-bosporus-red py-16 sm:py-20"
+      className="scroll-mt-20 bg-bosporus-red-dark py-16 sm:py-20"
       aria-labelledby="catering-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -24,7 +24,7 @@ export function Catering() {
         <div className="mt-8">
           <a
             href="#contact"
-            className="inline-flex items-center rounded-lg border-2 border-bosporus-gold bg-transparent px-6 py-3 font-medium text-bosporus-gold transition hover:bg-bosporus-gold hover:text-bosporus-red-dark focus:outline-none focus:ring-2 focus:ring-bosporus-gold focus:ring-offset-2 focus:ring-offset-bosporus-red"
+            className="inline-flex items-center rounded-lg border-2 border-bosporus-gold bg-transparent px-6 py-3 font-medium text-bosporus-gold transition hover:bg-bosporus-gold hover:text-bosporus-red-dark focus:outline-none focus:ring-2 focus:ring-bosporus-gold focus:ring-offset-2 focus:ring-offset-bosporus-red-dark"
           >
             {catering.cta[lang]}
           </a>
