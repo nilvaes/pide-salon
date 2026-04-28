@@ -53,18 +53,6 @@ function makeTilePattern(opacity: number) {
 
 // ─── SVG Ornament components ─────────────────────────────────────────────────
 
-function TulipIcon({ size = 32, color = P.gold }: { size?: number; color?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 40 40" fill="none" stroke={color} strokeWidth="1.1">
-      <path d="M20 6 C 14 12, 12 20, 14 28 C 16 34, 24 34, 26 28 C 28 20, 26 12, 20 6 Z" />
-      <path d="M20 10 C 17 16, 16 22, 18 28" />
-      <path d="M20 10 C 23 16, 24 22, 22 28" />
-      <path d="M20 28 L 20 36" />
-      <path d="M20 36 L 14 38 M20 36 L 26 38" />
-    </svg>
-  );
-}
-
 function DiamondMotif({ size = 12, color = P.gold }: { size?: number; color?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 40 40" fill="none" stroke={color} strokeWidth="1">
