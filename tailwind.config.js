@@ -20,6 +20,8 @@ export default {
         display: ['Playfair Display', 'Georgia', 'serif'],
         script: ['Dancing Script', 'cursive'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        cinzel: ['Cinzel', 'Georgia', 'serif'],
+        cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
       },
     },
   },
